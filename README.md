@@ -1,3 +1,12 @@
+# Background
+[ZN Studio](https://znstudio.com.au) is a digital experience design consulting studio in Brisbane with a goal to contribute our share of memorable experiences to this world. Every website, app and experience is designed, tested and built for the sake of this vision. Seriously, imagine a world where experience is always focused.
+
+# Setup
+```
+npm install
+npm run dev
+```
+
 # Technology
 
 PostCSS should be used with the following plugins:
@@ -132,6 +141,7 @@ These classes can also be extended by components later,
 5. Nest CSS for readability, including media queries
 6. Use BEM Syntax when creating custom component
 7. Add `apply` values on new lines
+8. Always use `rem` instead of `px`
 
 ## 1. Extend TailwindCSS functionality rather than create custom code
 
@@ -429,6 +439,37 @@ module.exports = {
 }
 
 ```
+
+# 8. Always use `rem` instead of `px`
+Styling should always be in `rem` values as they are relative to the body font size, which changes based on the screen width.
+
+This means that every element will by, default, scale up and down as the window changes.
+
+Furthermore, the calculations on the body means that any pixel value from a design can be easily converted into an equivalent `rem` in the code.
+
+For example,
+A `120px` padding at the top of an element, would be equivalent to `12rem` in this system. This is helpful in determining the `rem` value.
+
+**✅ DO:**
+
+```
+// component.css
+
+.component {
+  margin-top: 10rem;
+}
+```
+
+**❌ DON'T:**
+
+```
+// component.css
+
+.component {
+    margin-top: 100px;
+}
+```
+
 
 # Visual Studio Code Extensions
 Highly recommended that you use this: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss
