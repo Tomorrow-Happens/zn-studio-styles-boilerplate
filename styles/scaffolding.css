@@ -15,3 +15,8 @@ html {
     font-size: calc(100vw / 1920 * 10);
   }
 }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

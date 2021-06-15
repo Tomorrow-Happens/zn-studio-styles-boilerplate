@@ -385,6 +385,9 @@ A `120px` padding at the top of an element, would be equivalent to `12rem` in th
 }
 ```
 
+# General Notes
+
+1. Try and just use default TailwindCSS classes in the HTML for layout (grid etc.), but use components (refactored) for elements within the grids, e.g. a group of text expanders
 
 # Visual Studio Code Extensions
 Highly recommended that you use this: https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss

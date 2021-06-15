@@ -7,10 +7,23 @@ Useful in creating helper classes that are:
 2. Often extended by other components
 **/
 
+.wrapper-container {
+  width: 95%;
+  @apply mx-auto;
+}
+
 .section {
   @apply py-24;
 
   @screen sm {
     @apply py-32;
   }
+}
+
+.cover {
+  @apply absolute;
+  @apply top-0;
+  @apply left-0;
+  @apply w-full;
+  @apply h-full;
 }
