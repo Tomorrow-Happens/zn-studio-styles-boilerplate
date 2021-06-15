@@ -1,0 +1,8 @@
+.h1 {
+  @apply text-9xl;
+  @apply leading-none;
+}
+
+h1 {
+  @apply h1;
+}

@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local('Neue Haas Grotesk Display Pro'),
+    url('/fonts/neue-haas-grotesk-regular.woff2') format('woff2');
+  src: local('Neue Haas Grotesk Display Pro'),
+    url('/fonts/neue-haas-grotesk-regular.woff') format('woff');
+}

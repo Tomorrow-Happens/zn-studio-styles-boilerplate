@@ -1,0 +1,6 @@
+.header {
+  @apply text-9xl;
+  &__block {
+    @apply text-7xl;
+  }
+}

@@ -1,0 +1,7 @@
+.section {
+  @apply py-24;
+
+  @screen sm {
+    @apply py-32;
+  }
+}
