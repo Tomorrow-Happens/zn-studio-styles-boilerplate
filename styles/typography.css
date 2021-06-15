@@ -1,3 +1,9 @@
+/**
+typography.css
+----
+Used to create type classes that are extended by other components, at the end these are given to default h1, h2, h3 etc.
+**/
+
 .h1 {
   @apply text-9xl;
   @apply leading-none;

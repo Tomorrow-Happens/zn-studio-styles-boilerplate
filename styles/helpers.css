@@ -1,3 +1,12 @@
+/**
+helpers.css
+----
+Useful in creating helper classes that are:
+
+1. General in nature
+2. Often extended by other components
+**/
+
 .section {
   @apply py-24;
 

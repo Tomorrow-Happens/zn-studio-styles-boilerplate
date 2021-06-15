@@ -1,3 +1,9 @@
+/**
+scaffolding.css
+----
+Use this to import Tailwind base and utility helpers, then basic setup;
+**/
+
 @tailwind base;
 @tailwind utilities;
 

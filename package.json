@@ -1,4 +1,9 @@
 {
+  "author": {
+    "name": "Nate Zerk",
+    "email": "nate@znstudio.com.au",
+    "url": "https://znstudio.com.au"
+  },
   "dependencies": {
     "autoprefixer": "^10.2.6",
     "http-server": "^0.12.3",
