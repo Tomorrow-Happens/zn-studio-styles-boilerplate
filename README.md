@@ -144,6 +144,7 @@ These classes can also be extended by components later,
 8. Always use `rem` instead of `px`
 
 ## 1. Extend TailwindCSS functionality rather than create custom code
+When deciding what tailwind classes to use, choose spacing and font sizes which are close, or create a new spacing within the tailwind config.
 
 **✅ DO:**
 
