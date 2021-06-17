@@ -62,7 +62,19 @@ module.exports = {
       80: '40rem',
       96: '48rem',
     },
-    extend: {},
+    extend: {
+      lineHeight: {
+        tighter: 1.125,
+      },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        loco: 'cubic-bezier(.215,.61,.355,1)',
+      },
+      transitionDuration: {
+        '2000': '2000ms',
+      },
+    },
   },
   variants: {
     extend: {},

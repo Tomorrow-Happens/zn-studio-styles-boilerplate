@@ -10,7 +10,7 @@ Use this to declare any font faces, e.g.
   font-weight: normal;
   font-display: swap;
   src: local('Neue Haas Grotesk Display Pro'),
-    url('/fonts/neue-haas-grotesk-regular.woff2') format('woff2');
+    url('../fonts/neue-haas-grotesk-regular.woff2') format('woff2');
   src: local('Neue Haas Grotesk Display Pro'),
-    url('/fonts/neue-haas-grotesk-regular.woff') format('woff');
+    url('../fonts/neue-haas-grotesk-regular.woff') format('woff');
 }
