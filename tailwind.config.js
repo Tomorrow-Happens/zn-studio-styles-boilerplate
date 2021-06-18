@@ -1,7 +1,15 @@
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./**/*.html'],
+    content: [
+      './**/*.html',
+      './*.php',
+      './**/*.php',
+      '.app/*.js',
+      '.app/**/*.js',
+      './templates/**/*.twig',
+      './templates/*.twig',
+    ],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {

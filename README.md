@@ -230,8 +230,8 @@ Used to create buttons and links.
 2. [Keep Layout Classes Inline](#2-keep-layout-classes-inline)
 3. [Extend Tailwind Functionality](#3-extend-tailwind-functionality)
 4. [Always use `rem` instead of `px`](#4-always-use-rem-instead-of-px)
-5. [5: Nest CSS For Readability](#5-nest-css-for-readability)
-6. [6: Keep `apply`'s On New Lines](#6-keep-applys-on-new-lines)
+5. [Nest CSS For Readability](#5-nest-css-for-readability)
+6. [Keep `apply`'s On New Lines](#6-keep-applys-on-new-lines)
 
 ## 1: Refactor Components
 
