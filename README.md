@@ -2,23 +2,24 @@
 - [Background](#background)
 - [Setup](#setup)
 - [Technology](#technology)
-- [Project Structure](#project-structure)
-- [Files](#files)
-  - [styles.css](#stylescss)
-  - [fonts.css](#fontscss)
-  - [scaffolding.css](#scaffoldingcss)
-  - [helpers.css](#helperscss)
-  - [typography.css](#typographycss)
-  - [forms.css](#formscss)
-  - [buttons.css](#buttonscss)
-- [Code Guidelines](#code-guidelines)
-  1. [Refactor Components](#1-refactor-components)
-  2. [Keep Layout Classes Inline](#2-keep-layout-classes-inline)
-  3. [Extend Tailwind Functionality](#3-extend-tailwind-functionality)
-  4. [Always use `rem` instead of `px`](#4-always-use-rem-instead-of-px)
-  5. [Nest CSS For Readability](#5-nest-css-for-readability)
-  6. [Keep `apply`'s On New Lines](#6-keep-applys-on-new-lines)
+- [CSS](#CSS)
+  - [CSS File Structure](#css-file-structure)
+    - [styles.css](#stylescss)
+    - [fonts.css](#fontscss)
+    - [scaffolding.css](#scaffoldingcss)
+    - [helpers.css](#helperscss)
+    - [typography.css](#typographycss)
+    - [forms.css](#formscss)
+    - [buttons.css](#buttonscss)
+  - [Code Guidelines](#code-guidelines)
+    1. [Refactor Components](#1-refactor-components)
+    2. [Keep Layout Classes Inline](#2-keep-layout-classes-inline)
+    3. [Extend Tailwind Functionality](#3-extend-tailwind-functionality)
+    4. [Always use `rem` instead of `px`](#4-always-use-rem-instead-of-px)
+    5. [Nest CSS For Readability](#5-nest-css-for-readability)
+    6. [Keep `apply`'s On New Lines](#6-keep-applys-on-new-lines)
 - [Visual Studio Code Extensions](#visual-studio-code-extensions)
+- [VS Code Settings](#vs-code-settings)
 
 # Background
 
@@ -50,9 +51,13 @@ PostCSS is being used with the following plugins:
 2. TailwindCSS (https://tailwindcss.com)
 3. Autoprefixer (https://github.com/postcss/autoprefixer)
 
-# Project Structure
+# CSS
 
-1. Styles should be broken up into individual styles for understandability
+We have created our own CSS coding guideline system as seen below. We are hoping to achieve simplicity, readability and extendability.
+
+## CSS File Structure
+
+Styles should be broken up into individual styles for understandability
 
 ```
 styles
@@ -66,9 +71,7 @@ styles
     │   footer.css
 ```
 
-# Files
-
-## styles.css
+### styles.css
 
 ```
 @import "fonts";
@@ -79,7 +82,7 @@ styles
 @import "components/footer";
 ```
 
-## fonts.css
+### fonts.css
 
 Use this to declare any font faces, e.g.
 
@@ -94,7 +97,7 @@ Use this to declare any font faces, e.g.
 }
 ```
 
-## scaffolding.css
+### scaffolding.css
 
 Use this to import Tailwind base and utility helpers, then basic setup;
 
@@ -112,7 +115,7 @@ html {
 }
 ```
 
-## helpers.css
+### helpers.css
 
 Useful in creating helper classes that are:
 
@@ -141,7 +144,7 @@ This class might be extended by other components:
 
 ```
 
-## typography.css
+### typography.css
 
 Used to create type classes that are extended by other components, at the end these are given to default h1, h2, h3 etc.
 
@@ -166,7 +169,7 @@ These classes can also be extended by components later,
 }
 ```
 
-## forms.css
+### forms.css
 
 Used to style forms and their inputs.
 
@@ -194,7 +197,7 @@ textarea {
 }
 ```
 
-## buttons.css
+### buttons.css
 
 Used to create buttons and links.
 
@@ -224,7 +227,7 @@ Used to create buttons and links.
 }
 ```
 
-# Code Guidelines
+## Code Guidelines
 
 1. [Refactor Components](#1-refactor-components)
 2. [Keep Layout Classes Inline](#2-keep-layout-classes-inline)
@@ -233,7 +236,7 @@ Used to create buttons and links.
 5. [Nest CSS For Readability](#5-nest-css-for-readability)
 6. [Keep `apply`'s On New Lines](#6-keep-applys-on-new-lines)
 
-## 1: Refactor Components
+### 1: Refactor Components
 
 If you are creating something which can be thought of as an element, e.g. a gallery, it should be refactored into a component file under `components/{name}.css`.
 
@@ -307,7 +310,7 @@ When creating custom components, try and stick to the [BEM Syntax](http://getbem
 
 Sometimes, however, I prefer to keep elements like `p` and `a` free from additional classes.
 
-## 2: Keep Layout Classes Inline
+### 2: Keep Layout Classes Inline
 
 Try to keep layout HTML as inline styles or else components can be polluted.
 
@@ -335,7 +338,7 @@ component.css
 }
 ```
 
-## 3: Extend Tailwind Functionality
+### 3: Extend Tailwind Functionality
 
 When deciding what code to use for a particular item, always try and use as many tailwind helper functions and classes as possible.
 
@@ -424,7 +427,7 @@ Create or use custom media queries in code
 }
 ```
 
-## 4: Always use `rem` instead of `px`
+### 4: Always use `rem` instead of `px`
 
 Styling should always be in `rem` values as they are relative to the body font size, which changes based on the screen width.
 
@@ -457,7 +460,7 @@ Use `px` values.
 }
 ```
 
-## 5: Nest CSS For Readability
+### 5: Nest CSS For Readability
 
 **✅ DO:**
 Nest all styles, including media queries.
@@ -500,7 +503,7 @@ Separate classes out.
 }
 ```
 
-## 6: Keep `apply`'s On New Lines
+### 6: Keep `apply`'s On New Lines
 
 This just helps readability of components, especially when lots of styles.
 
@@ -532,9 +535,58 @@ Write them on the same line.
 Essential extensions:
 
 1. [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) - Amazingly helpful extension to show tailwind classes in intellisense. Follow install instructions.
-2. Prettier - Code formatter
-3. PostCSS syntax
+2. [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+3. [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+4. [GLSL Lint](https://marketplace.visualstudio.com/items?itemName=CADENAS.vscode-glsllint)
+5. [HTML Snippets](https://marketplace.visualstudio.com/items?itemName=abusaidm.html-snippets)
+6. [PostCSS syntax](https://marketplace.visualstudio.com/items?itemName=ricard.PostCSS)
+7. [pug (jade) formatter](https://marketplace.visualstudio.com/items?itemName=ducfilan.pug-formatter)
+8. [Twig](https://marketplace.visualstudio.com/items?itemName=whatwedo.twig)
+9. [Twig Language](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language)
+10. [Twig Language 2](https://marketplace.visualstudio.com/items?itemName=mblode.twig-language-2)
+11. [WebGL GLSL Editor](https://marketplace.visualstudio.com/items?itemName=raczzalan.webgl-glsl-editor)
+12. [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+13. [Shader languages support for VS Code](https://marketplace.visualstudio.com/items?itemName=slevesque.shader)
 
-Optional extensions:
-
-1. Color Highlight
+# VS Code Settings
+VS Code Settings for `settings.json`:
+```
+{
+    "editor.tabSize": 2,
+    "files.associations": {
+        "*.css": "postcss",
+        "*.html": "twig"
+    },
+    "emmet.includeLanguages": {
+        "postcss": "css",
+        "javascript": "javascriptreact",
+        "twig": "html"
+    },
+    "emmet.syntaxProfiles": {
+        "postcss": "css"
+    },
+    "emmet.excludeLanguages": [
+        "markdown"
+    ],
+    "liveServer.settings.root": "/dist",
+    "[twig]": {
+        "editor.defaultFormatter": "mblode.twig-language-2"
+    },
+    "css.validate": false,
+    "editor.quickSuggestions": {
+        "strings": true
+    },
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "html"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "window.zoomLevel": -1,
+    "eslint.format.enable": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
+}
+```
